@@ -30,6 +30,11 @@ This project is built using foundational web technologies.
 
 -----
 
+## 📷 Screenshots
+
+
+-----
+
 ## 📂 File Structure
 
 The project is organized with a simple and clean file structure for easy navigation and maintenance.
