@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - Scoreazy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- A full-page container for the new split-screen layout -->
+    <div class="login-page-container">
+
+        <!-- Left side with colorful design elements -->
+        <div class="login-hero">
+            <div class="login-hero-content">
+                <a href="index.html" class="login-hero-logo">
+                    <span class="brand-score">score</span><span class="brand-eazy">eazy</span>
+                </a>
+                <h1 class="login-hero-title">Your Journey to Confidence Starts Here.</h1>
+                <p class="login-hero-text">
+                    Join our community of parents and educators dedicated to empowering the next generation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right side with the form -->
+        <div class="login-form-container">
+            <div class="auth-card">
+                <h2 id="form-title">Register for Scoreazy</h2>
+                <form id="auth-form">
+                    <div class="form-group" id="name-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="form-button">Register</button>
+                </form>
+                <a href="#" id="toggle-link" class="form-toggle-link">Already have an account? Login here.</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle form toggling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formTitle = document.getElementById('form-title');
+            const nameGroup = document.getElementById('name-group');
+            const toggleLink = document.getElementById('toggle-link');
+            const formButton = document.querySelector('.form-button');
+
+            let isRegisterMode = true;
+
+            toggleLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                isRegisterMode = !isRegisterMode;
+
+                if (isRegisterMode) {
+                    formTitle.textContent = 'Register for Scoreazy';
+                    nameGroup.style.display = 'block';
+                    formButton.textContent = 'Register';
+                    toggleLink.textContent = 'Already have an account? Login here.';
+                } else {
+                    formTitle.textContent = 'Login to Scoreazy';
+                    nameGroup.style.display = 'none';
+                    formButton.textContent = 'Login';
+                    toggleLink.textContent = 'Need an account? Register here.';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
