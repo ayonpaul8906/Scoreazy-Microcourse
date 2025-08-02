@@ -32,6 +32,7 @@ This project is built using foundational web technologies.
 
 ## 📷 Screenshots
 
+<img width="1500" height="700" alt="image" src="https://github.com/user-attachments/assets/361aee31-25ed-4a44-93ff-d75a1584d9db" />
 
 -----
 
@@ -77,4 +78,5 @@ Simply open the `index.html` file in your preferred web browser to view the webs
   * **Backend Integration**: Connect the front-end to a backend service to handle real user authentication and data persistence.
   * **Course Functionality**: Develop the actual course content, including interactive lessons, quizzes, and progress tracking.
   * **Parent/Student Dashboards**: Create dedicated dashboards where parents and children can monitor learning progress and achievements.
+
   * **Accessibility Enhancements**: Improve accessibility for a wider range of users, ensuring a positive experience for everyone.
